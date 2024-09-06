@@ -1,0 +1,968 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.slider {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display:flexbox;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('./asset/bidang1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('./asset/bidang2.jpg');
+}
+.card[for="c3"] {
+    background-image: url('./asset/bidang3.jpg');
+}
+.card[for="c4"] {
+    background-image: url('./asset/bidang4.jpg');
+}
+.card[for="c5"] {
+    background-image: url('./asset/bidang5.jpg');
+}
+.card[for="c6"] {
+    background-image: url('./asset/allhima.jpg');
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#ccc;
+    color:#000000;
+}
+.header, .hero, .about, .makna-logo, .form-container, .sejarah, .bagianlogo{
+    color:#000000; 
+}
+
+.sejarah {
+    text-align: center;
+    text-indent:5%
+}
+
+.nav-item, .logout {
+    color: #fff; 
+}
+
+label, input::placeholder, .logo-item p {
+    color: #fff; 
+}
+
+.hero {
+    margin-top: 0;
+    padding-top: 0;
+}
+         
+
+.logo-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1300px; 
+    height: 450px; 
+    background: linear-gradient(45deg, #000000, #699aa8);
+    border-radius: 0%;
+    opacity: 0.7;
+    z-index: -1; 
+}
+
+.logo-image-hero {
+    max-width: 0px; 
+    margin-bottom: 0px;
+    z-index: 1; 
+}
+
+@media (max-width: 768px) {
+    .logo-background {
+        width: 200px;
+        height: 200px;
+    }
+    .logo-image-hero {
+        max-width: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 0px;
+    }
+}
+
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff4d4d;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item:hover {
+    color: #ff4d4d;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+
+.logout:hover {
+    background-color: #e60000;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons a {
+    margin-left: 15px; 
+}
+
+.social-icons img {
+    height: 24px;
+    width: 24px;
+}
+
+.hero {
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px;
+}
+
+.about, .makna-logo {
+    padding: 50px 20px;
+    text-align: center;
+    color:#fff;
+}
+
+.makna-logo-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    color: white;
+}
+
+.logo-image {
+    width: 40%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.about-description {
+    color: #000;
+}
+.logo-description {
+    width: 60%;
+    color: #000;
+    text-align: center;
+    text-indent:5%
+}
+
+.bagianlogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo-item {
+    width: 150px;
+    text-align: center; 
+    color: #000;
+}
+
+.logo-item img {
+    width: 100px;
+    height: auto;
+    color: #000;
+}
+
+.logo-item p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.struktur-organisasi {
+    color: #000;
+}
+
+.bagan {
+    position: relative;
+    text-align: center;
+}
+
+.judul-lek {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+.section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    color:#000;
+    border-radius: 8px;
+    text-indent: 26px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section p, .section img {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section form input, .section form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.section form button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logo-himatif-makna {
+    height: auto;
+    color: #000;
+    width: 150px;
+    display: flex;
+    margin: 0 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-container {
+    background-color: #d49047;
+    width: 100%;  
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="file"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+input[type="file"] {
+    padding: 0;
+    font-size: 0.9em;
+    color: #000;
+    background-color: #dcdde1;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+input[type="file"]::before {
+    content: 'FILE';
+    display: inline-block;
+    background: #6d6e71;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="file"]:hover::before {
+    background-color: #999;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+
+select:focus {
+    outline: none;
+    border-color: #000;
+}
+
+button {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+
+.himatif {
+    text-align: center;
+    margin-top: auto;
+    color:white;
+    top: 10px;
+}
+
+.org-chart ul {
+    padding-top: 20px;
+    position: relative;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.org-chart ul ul {
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.org-chart ul ul ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    padding-left: 0;
+}
+
+.org-chart ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid #004080;
+    width: 0;
+    height: 20px;
+}
+
+.org-chart > ul > li::before, 
+.org-chart > ul > li::after {
+    border-top: none;
+    border-left: none;
+    text-align: center;
+}
+
+.org-chart li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 20px;
+    position: relative;
+}
+
+.org-chart li::before, 
+.org-chart li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-top: 2px solid #004080;
+    width: 50%;
+    height: 20px;
+    text-align: center;
+}
+
+.org-chart li::after {
+    right: auto;
+    left: 50%;
+    border-left: 0;
+    text-align: center;
+}
+
+.org-chart ul ul li::before,
+.org-chart ul ul li::after {
+    border-top: 2px solid #004080;
+    border-right: none;
+    text-align: center;
+}
+
+.org-chart ul ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid #004080;
+    width: 0;
+    height: 20px;
+    text-align: center;
+}
+
+.org-chart ul ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid #004080;
+    width: 0;
+    height: 20px;
+    text-align: center;
+}
+
+.org-chart li div.node {
+    text-align: center;
+    border: 2px solid #004080;
+    padding: 10px;
+    background-color: white;
+    color: #004080;
+    display: inline-block;
+    border-radius: 8px;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left:0% ;
+ 
+}
+
+.org-chart li div.node:hover {
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.org-chart li li {
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.org-chart > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.org-chart > ul > li > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.org-chart > ul > li > ul > li > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+
+.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0%;
+            right: 0%;
+            width: 100%;
+            z-index: 1000;
+          }
+          
+  
+          .navbar a {
+              color: #000;
+              text-decoration: none;
+              font-size: 16px;
+              margin-left: 10%;
+          }
+
+          .navbar a:hover{
+            background-color: red;
+              color: #fff;
+              padding: 5px 15px;
+              border-radius: 20px;
+          }
+  
+          .navbar a.logout {
+              background-color: #000;
+              color: #fff;
+              padding: 5px 15px;
+              border-radius: 20px;
+              margin-right: 5px;
+          }
+  
+          .navbar .logo {
+              display: flex;
+              align-items: center;
+          }
+  
+          .navbar img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              margin-right: 10px;
+          }
+  
+          .navbar .social-icons a {
+              margin-left: 10px;
+              font-size: 20px;
+          }
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+        
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.profile-section h2{
+    color :white;
+}
+.profile-box {
+    width: 285px;
+    height: 285px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto; 
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.profile-position {
+    font-size: 16px;
+    color: #000000;
+}
+
+.seben-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.seben-section h2 {
+    color :white;
+}
+
+.seben-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.seben-box {
+    width: 285px;
+    height: 285px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seben-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.seben-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.seben-position {
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.seben-section {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bidang-section {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bidang-section h2 {
+    color:white;
+}
+
+.bidang-box {
+    width: 200px; 
+    height: 285px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bidang-photo {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.bidang-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.bidang-position {
+    font-size: 16px;
+    color: #000000;
+}
+
+.bidang-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+.anggota-section {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.anggota-box {
+    width: 150px;
+    height: 325px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.anggota-photo {
+    width: 120px; 
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.anggota-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.anggota-position {
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.anggota-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+/* foooter */
+a {
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+}
+footer img {
+    width: 40px;
+    margin: 0 10px;
+}
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: black;
+}
+footer .address {
+    margin-top: 5px;
+    font-size: 12px;
+    color: black;
+}
+

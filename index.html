@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./asset/hima.png" alt="Logo">
+                <a href="#">Profile</a>
+                <a href="#" style="color: red;">Event</a>
+                <a href="#">Testimony</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="logout">LogOut</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <button class="logout">LogOut</button>
+        </div>
+    </header>    
+    <section class="hero">
+        <div class="logo-background"></div>
+        <body> 
+            <div class="wrapper">
+                <div class="slider">
+                    <input type="radio" name="slide" id="c6">
+                    <label for="c6" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>HIMPUNAN MAHASISWA TEKNIK INFORMATIKA</h4>
+                                <p>PERIODE 2024/2025</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c1" checked>
+                    <label for="c1" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>Bidang 1</h4>
+                                <p>Keilmuan dan Penelitian</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>Bidang 2</h4>
+                                <p>Kemahasiswaan</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c3">
+                    <label for="c3" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>Bidang 3</h4>
+                                <p>Minat Bakat</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c4">
+                    <label for="c4" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>Bidang 4</h4>
+                                <p>Kaderisasi</p>
+                            </div>
+                        </div>
+                    </label>
+                    <input type="radio" name="slide" id="c5">
+                    <label for="c5" class="card">
+                        <div class="row">
+                            <div class="description">
+                                <h4>Bidang 5</h4>
+                                <p>Sosial Masyarakat</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <script>
+                let currentSlide = 1;
+                const totalSlides = 6;
+                const slideDuration = 2000; 
+        
+                function autoSlide() {
+                    document.getElementById('c' + currentSlide).checked = true;
+                    currentSlide = (currentSlide % totalSlides) + 1;
+                }
+        
+                setInterval(autoSlide, slideDuration);
+            </script>
+        </body>
+        <h1 class="himatif">HIMPUNAN MAHASISWA TEKNIK INFORMATIKA UMS</h1> <br>
+    </section> 
+
+    <section id="about-us" class="section">
+        <h2>ABOUT US</h2>
+        <p>Himatif merupakan Himpunan Mahasiswa Program Studi Teknik Informatika, yang bernaung dibawah Fakultas Komunikasi dan Informatika Universitas Muhammadiyah Surakarta. Himatif didirikan pada tanggal 13 Desember 2007 untuk jangka waktu yang tidak ditentukan. Himatif bertempat di Gedung J lantai 3 Fakultas Komunikasi dan Informatika UMS Jl. A. Yani Tromol Pos I Surakarta</p>
+    </section>
+
+    <section id="sejarah" class="section">
+        <h2>SEJARAH</h2>
+        <p>Himpunan Mahasiswa Teknik Informatika (HMTI) didirikan sebagai respons terhadap kebutuhan mahasiswa untuk memiliki wadah yang dapat menampung aspirasi, ide, dan kebutuhan mereka dalam bidang teknologi informasi. Inisiatif awal datang dari sekelompok mahasiswa dan didukung oleh dosen-dosen yang mengajar di jurusan Teknik Informatika. Setelah membentuk kepanitiaan sementara yang merancang Anggaran Dasar dan Anggaran Rumah Tangga, organisasi ini secara resmi dideklarasikan dan disahkan oleh pihak fakultas atau universitas. Pemilihan pengurus pertama dilakukan secara demokratis, dan pengurus terpilih bertanggung jawab untuk menjalankan organisasi sesuai visi dan misi yang telah ditetapkan.</p>
+            <p> Sejak terbentuk, HMTI telah mengalami berbagai fase perkembangan, mulai dari konsolidasi internal, ekspansi kegiatan, hingga menjalin kerjasama dengan pihak eksternal. Berbagai kegiatan seperti seminar, workshop, pelatihan, dan kompetisi diselenggarakan untuk meningkatkan keterampilan dan wawasan mahasiswa. Melalui inovasi dan adaptasi terhadap perkembangan teknologi, HMTI terus berusaha memenuhi kebutuhan anggotanya dan berkontribusi positif dalam meningkatkan kualitas mahasiswa, membangun jaringan profesional, dan mendorong inovasi. Hingga kini, HMTI telah menjadi organisasi yang solid dan berpengaruh di lingkungan akademis maupun industri.</p>
+    </section>
+
+    <section id="makna-logo" class="section">
+        <h2>MAKNA LOGO</h2>
+        <div class="logo-himatif-makna">
+            <img src="./asset/logo-himatif.png" alt="Makna Logo">
+        </div>
+        <p> Himpunan Mahasiswa Teknik Informatika (HIMATIF) adalah sebuah organisasi mahasiswa intra-kampus yang bertujuan untuk menghimpun, mengembangkan, dan memperjuangkan aspirasi serta kepentingan mahasiswa jurusan Teknik Informatika. Organisasi ini berfungsi sebagai wadah bagi mahasiswa untuk menyalurkan minat dan bakat mereka dalam bidang teknologi informasi serta untuk berpartisipasi dalam kegiatan yang mendukung pengembangan akademik, profesional, dan sosial.
+            </p> 
+            <br>
+        </div>
+        <div class="bagianlogo">
+            <div class="logo-item">
+                <img src="./asset/tameng.png" alt="Tameng">
+                <p>Tameng</p>
+            </div>
+            <div class="logo-item">
+                <img src="./asset/pita.png" alt="Pita">
+                <p>Pita</p>
+            </div>
+            <div class="logo-item">
+                <img src="./asset/HurufH.png" alt="Huruf H">
+                <p>Huruf H</p>
+            </div>
+            <div class="logo-item">
+                <img src="./asset/lingkaran.png" alt="Lingkaran">
+                <p>Lingkaran</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="struktur-organisasi" class="section">
+            <h2>STRUKTUR ORGANISASI</h2>
+                <div class="org-chart">
+                    <ul>
+                        <li>
+                            <div class="node">Ketua Umum</div>
+                            <ul>
+                            <div class="node">Wakil Ketua Umum</div>
+                                <li>
+                                    <div class="node">Sekretaris</div>
+                                    <div class="node">Bendahara</div>
+                                </li>
+                                    <ul>
+                                        <li><div class="node">Bidang 1</div></li>
+                                        <li><div class="node">Bidang 2</div></li>
+                                        <li><div class="node">Bidang 3</div></li>
+                                        <li><div class="node">Bidang 4</div></li>
+                                        <li><div class="node">Bidang 5</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+    <section>
+        <h2 class="judul-lek">FORMULIR ANGGOTA</h2>
+    </section> 
+        <section> 
+            <div class="form-container">
+                <h2>MASUKAN ANGGOTA MU</h2>
+                <form action="submit.php" method="post" enctype="multipart/form-data">
+                    <label for="nama">NAMA ANGGOTA</label>
+                    <input type="text" id="nama" name="nama" required>
+                    <label for="struktur">STRUKTUR ORGANISASI</label>
+                        <select id="struktur" name="struktur" required>
+                            <option value="">Pilih Struktur Organisasi</option>
+                            <option value="ketua">Ketua Umum</option>
+                            <option value="wakil_ketua">Wakil Ketua Umum</option>
+                            <option value="sekretaris">Sekretaris</option>
+                            <option value="bendahara">Bendahara</option>
+                            <option value="Bidang 1">Bidang 1</option>
+                            <option value="Bidang 2">Bidang 2</option>
+                            <option value="Bidang 3">Bidang 3</option>
+                            <option value="Bidang 4">Bidang 4</option>
+                            <option value="Bidang 5">Bidang 5</option>
+                        </select>
+
+                        <label for="jabatan">JABATAN</label>
+                        <select id="jabatan" name="jabatan" required>
+                            <option value="">Pilih Jabatan</option>
+                            <option value="ketua">Ketua Umum</option>
+                            <option value="wakil_ketua">Wakil Ketua Umum</option>
+                            <option value="sekretaris">Sekretaris</option>
+                            <option value="bendahara">Bendahara</option>
+                            <option value="Ketua Bidang 1">Ketua Bidang 1</option>
+                            <option value="Ketua Bidang 2">Ketua Bidang 2</option>
+                            <option value="Ketua Bidang 3">Ketua Bidang 3</option>
+                            <option value="Ketua Bidang 4">Ketua Bidang 4</option>
+                            <option value="Ketua Bidang 5">Ketua Bidang 5</option>
+                            <option value="Sekretaris Bidang 1">Sekretaris Bidang 1</option>
+                            <option value="Sekretaris Bidang 2">Sekretaris Bidang 2</option>
+                            <option value="Sekretaris Bidang 3">Sekretaris Bidang 3</option>
+                            <option value="Sekretaris Bidang 4">Sekretaris Bidang 4</option>
+                            <option value="Sekretaris Bidang 5">Sekretaris Bidang 5</option>
+                            <option value="Anggota Bidang 1">Anggota Bidang 1</option>
+                            <option value="Anggota Bidang 2">Anggota Bidang 2</option>
+                            <option value="Anggota Bidang 3">Anggota Bidang 3</option>
+                            <option value="Anggota Bidang 4">Anggota Bidang 4</option>
+                            <option value="Anggota Bidang 5">Anggota Bidang 5</option>
+                        </select>
+                    <label for="foto">UPLOAD FOTO</label>
+                    <input type="file" id="foto" name="foto">
+                
+                    <button type="submit">SUBMIT</button>
+                </form>                    
+            </div>
+
+        </section>
+    </section>
+</section>
+<br>
+    <section class="profile-section">
+        <div class="kotak">
+            <h2>KETUA UMUM</h2>
+            <p>Memimpin dan mengawasi seluruh kegiatan organisasi serta menjadi representasi HMTI di berbagai forum.</p>
+            <div class="profile-box">
+                <img src="./asset/lelaki2.jpg" alt="Profile Photo" class="profile-photo">
+                <h3 class="profile-name">Labib Awwam Husnayya</h3>
+                <p class="profile-position">Ketua Umum</p>
+            </div>
+        </div>
+    </section>   
+    <section class="profile-section">
+            <div class="kotak">
+                <h2>WAKIL KETUA UMUM</h2>
+                <p>Mendampingi dan membantu Ketua Himpunan dalam menjalankan tugas-tugasnya, serta menggantikan Ketua jika berhalangan.</p>
+                    <div class="profile-box">
+                        <img src="./asset/lelaki2.jpg" alt="Profile Photo" class="profile-photo">
+                        <h3 class="profile-name">Inandra Asha Fardhana</h3>
+                        <p class="profile-position">Wakil Ketua Umum</p>
+                    </div>
+            </div>
+    </section>   
+    <section class="seben-section">
+        <div class="kotak">
+            <h2>SEKRETARIS UMUM</h2>
+            <p>Bertanggung jawab atas administrasi, dokumentasi, serta surat-menyurat organisasi.</p>
+            <div class="seben-grid">
+                <div class="seben-box">
+                    <img src="./asset/perempuan2.jpg" alt="seben Photo" class="seben-photo">
+                    <h3 class="seben-name">Abila Prastika Navilata</h3>
+                    <p class="seben-position">Sekretaris 1</p>
+                </div>
+                <div class="seben-box">
+                    <img src="./asset/perempuan1.jpg" alt="seben Photo" class="seben-photo">
+                    <h3 class="seben-name">Joselyn Agnes Arianti</h3>
+                    <p class="seben-position">Sekretaris 2</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seben-section">
+        <div class="kotak">
+            <h2>BENDAHARA UMUM</h2>
+            <p>Mengelola keuangan, termasuk perencanaan anggaran, pencatatan pemasukan dan pengeluaran, serta penyusunan laporan keuangan.</p>
+            <div class="seben-grid">
+                <div class="seben-box">
+                    <img src="./asset/perempuan1.jpg" alt="seben Photo" class="seben-photo">
+                    <h3 class="seben-name">Dinta Apresia Nurhalis Sagita</h3>
+                    <p class="seben-position">BENDAHARA 1</p>
+                </div>               
+            </div>
+        </div>
+    </section>
+    <section class="bidang-section">
+        <h2>Bidang 1 : Keilmuan dan Penelitian</h2>
+        <p> Berfokus pada penelitian dan keilmuan guna meningkatkan SDM yang ada di informatika</p>
+        <div class="bidang-grid">
+            <div class="bidang-box">
+                <img src="./asset/lelaki1.jpg" alt="Bidang Photo" class="bidang-photo">
+                <h3 class="bidang-name">As'ad Nirot Ahmadi</h3>
+                <p class="bidang-position">Ketua Bidang</p>
+            </div>
+            <div class="bidang-box">
+                <img src="./asset/perempuan2.jpg" alt="Bidang Photo" class="bidang-photo">
+                <h3 class="bidang-name">Tsania Amiratus Sholehah</h3>
+                <p class="bidang-position">Sekretaris Bidang</p>
+            </div>
+        </div>
+</section>
+<section class="anggota-section">
+        <div class="anggota-grid">
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Alfirda Moqta Darmawan</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Kenza Rivando Arghata</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Pramudya Amara Setyaningtyas</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Victor Gallant Smart</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Viki Julian Avinda Nur Ependi</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Angelita Clara Maghareta</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Farrel Najdin Alfadillah</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Muhammad Said Agil Husin Almunawar</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Muhammad Syahid Kusasih</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Nam Anas Darmawan</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Narendra Satya Adikurniawan</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Nursaid Fadilah Rohman</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Romario Permana Putra</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+            <div class="anggota-box">
+                <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+                <h3 class="anggota-name">Suryani Elmaghfiroh</h3>
+                <p class="anggota-position">Anggota Bidang</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bidang-section">
+    <h2>Bidang 2 : Kemahasiswaan</h2>
+    <p> Berfokus pada penelitian dan keilmuan guna meningkatkan SDM yang ada di informatika</p>
+    <div class="bidang-grid">
+        <div class="bidang-box">
+            <img src="./asset/lelaki1.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Faiq Nasrullah</h3>
+            <p class="bidang-position">Ketua Bidang</p>
+        </div>
+        <div class="bidang-box">
+            <img src="./asset/perempuan2.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Farrel Firstiyanti Putri Nugroho</h3>
+            <p class="bidang-position">Sekretaris Bidang</p>
+        </div>
+    </div>
+</section>
+<section class="anggota-section">
+    <div class="anggota-grid">
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Aqila Shafa Fazira</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Dian Sasya Fitriani</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Fauzan Bayu Samudra</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Hilda Nasywa Nurhaliza</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Safira Nur Ardiani</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Stiven Akbar Firmansyah</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Adinda Putri Nur Fadila</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Amelia Putricia Wardani</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Athaya Fajar Syailendra</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Habib Ali Gafur</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Ilham Syah Arouf Amaruloh Darmawan</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Mohammad Shakeel Zain</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="bidang-section">
+    <h2>Bidang 3 : Minat Bakat</h2>
+    <p> Berfokus pada penelitian dan keilmuan guna meningkatkan SDM yang ada di informatika</p>
+    <div class="bidang-grid">
+        <div class="bidang-box">
+            <img src="./asset/lelaki1.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Heidar Fadhlullah Destianto</h3>
+            <p class="bidang-position">Ketua Bidang</p>
+        </div>
+        <div class="bidang-box">
+            <img src="./asset/perempuan2.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Saskyra Zahra Larasati</h3>
+            <p class="bidang-position">Sekretaris Bidang</p>
+        </div>
+    </div>
+</section>
+<section class="anggota-section">
+    <div class="anggota-grid">
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Afif Fadhil Mahmudi</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Arina Mana Sikana Navya Putri</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Anindya Lutfia Apsari</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Hasna Rofifah Mahasin Yumna</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Hussain Abdillah Tugas Kelarno</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Jumiana</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Rechin Zaqia Aurista</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Satria Duta Mahendraloka</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Tutut Bagiawati</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Edwin Helmi Setiawan</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Erichardo Dwiva Yuda</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">	
+                Ghurrotun Niswah Kafi</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Jenar Mahesa Putri</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Lutfi Syahrul Ramdani</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Muhammad Zidni Khoirul Rizqi</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Rauf Zaidan Fajari</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Retno Sunarti</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="bidang-section">
+    <h2>Bidang 4 : Kaderisasi</h2>
+    <p> Berfokus pada penelitian dan keilmuan guna meningkatkan SDM yang ada di informatika</p>
+    <div class="bidang-grid">
+        <div class="bidang-box">
+            <img src="./asset/lelaki1.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Mochamad Raihan Mukhorobun</h3>
+            <p class="bidang-position">Ketua Bidang</p>
+        </div>
+        <div class="bidang-box">
+            <img src="./asset/perempuan2.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Nabilla Puspita Sari</h3>
+            <p class="bidang-position">Sekretaris Bidang</p>
+        </div>
+    </div>
+</section>
+<section class="anggota-section">
+    <div class="anggota-grid">
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="bidang-section">
+    <h2>Bidang 5 : Sosial Masyarakat</h2>
+    <p> Berfokus pada penelitian dan keilmuan guna meningkatkan SDM yang ada di informatika</p>
+    <div class="bidang-grid">
+        <div class="bidang-box">
+            <img src="./asset/lelaki1.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Nama Lengkap</h3>
+            <p class="bidang-position">Ketua Bidang</p>
+        </div>
+        <div class="bidang-box">
+            <img src="./asset/perempuan2.jpg" alt="Bidang Photo" class="bidang-photo">
+            <h3 class="bidang-name">Nama Lengkap</h3>
+            <p class="bidang-position">Sekretaris Bidang</p>
+        </div>
+    </div>
+</section>
+<section class="anggota-section">
+    <div class="anggota-grid">
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+        <div class="anggota-box">
+            <img src="./asset/lelaki1.jpg" alt="Anggota Photo" class="anggota-photo">
+            <h3 class="anggota-name">Nama Lengkap</h3>
+            <p class="anggota-position">Anggota Bidang</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer>
+    <div>
+        <a class="f-icon"
+        href="https://www.instagram.com/himatifums?igsh=MTd3dTE4bTF5cHRwYQ==">
+            <img src="./asset/ig.png" alt="Instagram">
+        </a>
+        <a class="f-icon"
+        href="https://www.tiktok.com/@himatif.ums?_t=8ozJVMSPLoP&_r=1">
+            <img src="./asset/tiktok.png" alt="TikTok">
+        </a>
+        <a class="f-icon"
+         href="https://youtube.com/@himatifums5050?feature=shared">
+            <img src="./asset/youtube.png" alt="YouTube">
+        </a>
+        
+    </div>
+    <p class="address">Gedung J Lantai 3 Sayap Kiri Fakultas Komunikasi dan Informatika UMS<br>
+        Jl. Ahmad Yani Tromol Pos 1 Pabelan Kartasura, Surakarta 57102
+    </p>
+    <p>@HIMATIF UMS</p>
+</footer> 
+</body>
+</html>
